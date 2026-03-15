@@ -1,0 +1,782 @@
+/* Promo Banner Container */
+.promo-banner {
+  width: 100%;
+  height: 500px;
+}
+.promo-swiper {
+  width: 100%;
+  height: 100%;
+}
+
+/* Slide Container */
+.slide-container {
+  position: relative;
+  width: 100%;
+  height: 700px; /* taller height for hero image */
+  overflow: hidden;
+}
+
+/* Full-width Image */
+.slide-container img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+/* Text Overlay on Left */
+.slide-text {
+  position: absolute;
+  top: 30%; /* vertical center */
+  left: 5%; /* align to left */
+  transform: translateY(-50%);
+  color: #fff;
+  text-align: left;
+  max-width: 400px; /* optional: limit width */
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif; /* different font */
+}
+
+.slide-title {
+  font-size: 2.5rem; /* bigger title */
+  font-weight: 700;
+  margin-bottom: 12px;
+}
+
+.slide-description {
+  font-size: 1.5rem;
+  margin-bottom: 20px;
+}
+
+.slide-prices {
+  display: flex;
+  align-items: center;
+  gap: 16px;
+  margin-bottom: 20px;
+}
+
+.old-price {
+  text-decoration: line-through;
+  color: #ccc;
+}
+
+.new-price {
+  font-size: 2rem;
+  color: #4ade80; /* green */
+  font-weight: bold;
+}
+
+.slide-button {
+  background-color: #22c55e; /* green */
+  color: #fff;
+  padding: 12px 28px;
+  border-radius: 10px;
+  font-size: 1rem;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.slide-button:hover {
+  background-color: #16a34a;
+}
+
+/* Swiper pagination at bottom */
+.swiper-pagination {
+  bottom: 20px !important;
+  text-align: center;
+}
+
+/* Inactive lines */
+.swiper-pagination-bullet {
+  width: 50px;        /* length of the line */
+  height: 4px;        /* thickness */
+  background: rgba(255, 255, 255, 0.5); 
+  opacity: 1;
+  border-radius: 2px;
+  margin: 0 6px !important;
+  transition: all 0.3s ease;
+}
+
+/* Active line */
+.bank-offers-section {
+  font-family: 'Montserrat', sans-serif;
+  padding: 24px;
+  background-color: #000;
+  color: #fff;
+  
+}
+
+.bank-offers-title {
+  font-size: 1.8rem;        /* Large heading */
+  font-weight: 500;        /* Bold like Croma */
+  margin-bottom: 16px;
+  text-align: left;
+  letter-spacing: 0.5px;
+}
+
+.bank-offers-swiper {
+  padding-top: 10px;
+  padding-bottom: 10px;
+}
+
+.bank-offer-slide {
+  width: auto;             /* for slidesPerView=4 */
+}
+
+.bank-offer-card {
+  background-color: #fff;
+  color: #000;
+  border-radius: 12px;
+  box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+  padding: 16px;
+  height: 112px;          /* same as h-28 */
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  transition: transform 0.3s ease;
+}
+
+.bank-offer-card:hover {
+  transform: translateY(-5px);
+}
+
+.bank-offer-logo {
+  height: 48px;          /* bigger logo */
+  width: auto;           /* maintain aspect ratio */
+  margin-bottom: 8px;
+  object-fit: contain;
+}
+
+
+.bank-offer-text {
+  font-size: 0.875rem;     /* text-sm */
+  font-weight: 600;
+  text-align: center;
+}
+
+.bank-offer-subtext {
+  font-size: 0.75rem;      /* text-xs */
+  color: #555;             /* gray color for subtext */
+  margin-top: 4px;
+  text-align: center;
+}
+
+
+
+/* Container for each product card */
+.product-card {
+  max-width: 700px;
+  background: linear-gradient(145deg, #ffffff, #f9fafb);
+
+  border-radius: 16px;
+  box-shadow: 6px 12px 18px rgba(0, 0, 0, 0.08);
+  padding: 16px; /* reduced padding */
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.product-card:hover {
+  transform: translateY(-6px) scale(1.02);
+  box-shadow: 0 10px 24px rgba(0, 0, 0, 0.16);
+}
+
+/* Product name */
+.product-name {
+  font-size: 1.3rem; /* slightly smaller */
+  font-weight: 800;
+  color: #111827;
+  margin-bottom: 4px; /* less gap */
+}
+
+/* Price */
+.product-price {
+  font-size: 1rem;
+  font-weight: 600;
+  color: #2563eb;
+  margin-bottom: 4px; /* reduced */
+}
+
+/* Subtext */
+.product-subtext {
+  font-size: 0.8rem;
+  color: #6b7280;
+  margin-bottom: 8px; /* reduced */
+  font-style: italic;
+}
+
+/* Buy button (smaller) */
+.product-button {
+  background: linear-gradient(90deg, #22c55e, #16a34a);
+  color: #ffffff;
+  padding: 5px 12px; /* smaller size */
+  border: none;
+  border-radius: 9999px;
+  cursor: pointer;
+  font-weight: 500;
+  font-size: 0.75rem; /* smaller text */
+  transition: all 0.3s ease-in-out;
+  margin-bottom: 8px; /* reduced gap */
+}
+
+.product-button:hover {
+  background: linear-gradient(90deg, #16a34a, #15803d);
+  transform: scale(1.05);
+  box-shadow: 0 3px 10px rgba(22, 163, 74, 0.35);
+}
+
+/* Product image */
+.product-image {
+  height: 80px; /* slightly smaller */
+  width: auto;
+  margin-top: 4px;
+  object-fit: contain;
+  transition: transform 0.3s ease;
+}
+
+.product-card:hover .product-image {
+  transform: scale(1.06);
+}
+
+/* Heading */
+.latest-launches-heading {
+  font-size: 1.6rem;
+  font-weight: 700;
+  text-align: center;
+  color: #1e3a8a;
+  margin-bottom: 16px; /* less gap */
+  text-transform: uppercase;
+  letter-spacing: 0.5px;
+}
+
+/* Container for product cards */
+.product-cards-container {
+  display: flex;
+  gap: 16px; /* less gap between cards */
+  flex-wrap: wrap;
+  justify-content: center;
+}
+.container {
+  max-width: 90%;
+  margin: 0 auto;
+  padding: 0 1rem;
+  
+}
+
+/* Heading */
+.whatshot-heading {
+font-size: 1.6rem;
+  font-weight: 700;
+  color: #ffffff;
+  margin: 1.5rem 0;
+}
+
+/* Cards Container */
+.whatshot-cards-container {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(200px, 1fr)); /* reduced min-width from 230px to 200px */
+  gap: 1rem;
+}
+
+/* Single Card */
+.whatshot-card {
+
+  border-radius: 16px;
+  box-shadow: 0 6px 18px rgba(0, 0, 0, 0.25);
+  padding: 10px;
+  text-align: center;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.whatshot-card:hover {
+  transform: translateY(-6px) scale(1.03);
+  box-shadow: 0 10px 24px rgba(0, 0, 0, 0.4);
+}
+
+/* Image */
+.whatshot-image {
+  height: 100px;
+  width: auto;
+  margin-bottom: 1rem;
+  object-fit: contain;
+  transition: transform 0.3s ease;
+}
+.whatshot-card:hover .whatshot-image {
+  transform: scale(1.05);
+}
+
+/* Product Name */
+.whatshot-name {
+  font-size: 1.1rem;
+  font-weight: 600;
+  color: #ffffff;
+  margin-bottom: 0.25rem;
+}
+
+/* Subtitle */
+.whatshot-subtitle {
+  font-size: 1.3rem; /* slightly smaller */
+  font-weight: 600;
+  margin-bottom: 0.5rem;
+}
+
+/* Price Box */
+.whatshot-price-box {
+  text-align: center;
+}
+
+.whatshot-oldprice {
+  text-decoration: line-through;
+  color: #9ca3af;
+  font-size: 0.9rem;
+}
+
+.whatshot-price {
+  font-size: 1.2rem;
+  font-weight: 700;
+  color: #ffffff;
+}
+
+/* Subtext */
+.whatshot-subtext {
+  font-size: 0.75rem;
+  color: #d1d5db;
+  margin-top: 0.5rem;
+  font-style: italic;
+}
+
+
+.promo-grid {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  grid-gap: 16px;
+}
+
+.promo-card {
+  overflow: hidden;
+  border-radius: 12px;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.2);
+  transition: transform 0.3s ease;
+}
+
+
+
+.promo-image {
+  width: 100%;
+  height:320px;   /* fixed height for all */
+  object-fit: cover;
+  display: block;
+}
+
+/* Last image full width */
+.promo-card:last-child {
+  grid-column: span 2;
+}
+
+/* Responsive */
+@media (max-width: 768px) {
+  .promo-grid {
+    grid-template-columns: 1fr;
+  }
+
+  .promo-card:last-child {
+    grid-column: span 1;
+  }
+
+  .promo-image {
+    height: 200px;  /* same fixed height on mobile */
+  }
+}
+
+
+.promo-title {
+  font-size: 2.5rem;       /* Bigger font */
+  font-weight: 800;        /* Bold */
+  color: #ffffff;          /* White text */
+  text-align: start;      /* Centered */
+  margin-bottom: 2rem;     /* Space below */
+  text-shadow: 2px 2px 6px rgba(0,0,0,0.5); /* Subtle shadow for contrast */
+  letter-spacing: 1px;     /* Slight spacing for style */
+}
+/* Overlay effect for What’s Hot cards */
+.whatshot-card {
+  position: relative;
+  overflow: hidden;
+  border-radius: 16px;
+  cursor: pointer;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.whatshot-card:hover {
+  transform: translateY(-6px) scale(1.03);
+  box-shadow: 0 10px 24px rgba(0, 0, 0, 0.4);
+}
+
+/* Image always visible */
+.whatshot-image {
+  width: 100%;
+  height: 300px; /* smaller initial height */
+  object-fit: cover;
+  transition: transform 0.3s ease;
+}
+
+/* Overlay for price/details */
+.whatshot-price-box,
+.whatshot-subtitle,
+.whatshot-subtext,
+.whatshot-name {
+  position: absolute;
+  width: 100%;
+  left: 0;
+  text-align: center;
+  padding: 8px;
+  background: rgba(0, 0, 0, 0.85);
+  transform: translateY(100%);
+  opacity: 0;
+  transition: transform 0.3s ease, opacity 0.3s ease;
+}
+
+/* Position each element inside overlay */
+.whatshot-name {
+  top: 20px;
+  font-size: 1.1rem;
+  font-weight: 600;
+  color: #fff;
+}
+
+.whatshot-subtitle {
+  top: 50px;
+  font-size: 1rem;
+  font-weight: 500;
+  color: #fff;
+}
+
+.whatshot-price-box {
+  bottom: 40px;
+}
+
+.whatshot-oldprice {
+  text-decoration: line-through;
+  color: #9ca3af;
+  font-size: 0.9rem;
+}
+
+.whatshot-price {
+  font-size: 1.2rem;
+  font-weight: 700;
+  color: #fff;
+}
+
+.whatshot-subtext {
+  bottom: 10px;
+  font-size: 0.75rem;
+  color: #d1d5db;
+  font-style: italic;
+}
+
+/* Reveal overlay on hover */
+.whatshot-card:hover .whatshot-price-box,
+.whatshot-card:hover .whatshot-subtitle,
+.whatshot-card:hover .whatshot-subtext,
+.whatshot-card:hover .whatshot-name {
+  transform: translateY(0);
+  opacity: 1;
+}
+
+/* Optional: zoom image slightly on hover */
+.whatshot-card:hover .whatshot-image {
+  transform: scale(1.05);
+}/* Swiper Banner */
+/* Swiper Banner */
+.banner-swiper-container {
+  width: 100%;
+  border-radius: 0; /* remove rounded edges for full width */
+  overflow: hidden;
+}
+
+/* Banner full width with background */
+.banner-container {
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 80px; /* more padding for spacious look */
+  min-height: 450px;
+  background: linear-gradient(135deg, #000000, #ff007f); /* full bg */
+  color: #fff;
+  gap: 40px;
+  box-sizing: border-box;
+}
+
+/* Image */
+.banner-image-wrapper {
+  flex: 1;
+  display: flex;
+  justify-content: center;
+}
+
+.banner-image {
+  width: 100%;
+  max-width: 520px; /* larger image */
+  border-radius: 14px;
+  box-shadow: 0 8px 24px rgba(0,0,0,0.55);
+}
+
+/* Text */
+.banner-content {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start; /* start from left */
+  justify-content: center;
+  animation: slideInRight 1s ease-in-out;
+  text-align: left;
+}
+
+.banner-title {
+  font-size: 48px; /* much bigger */
+  font-weight: 800;
+  margin-bottom: 18px;
+  line-height: 1.2;
+}
+
+.banner-subtitle {
+  font-size: 22px;
+  margin-bottom: 28px;
+}
+
+.banner-btn {
+  padding: 10px 20px;
+  background-color: #fff;
+  color: #000;
+  border: none;
+  border-radius: 8px;
+  font-size: 18px;
+  font-weight: 600;
+  cursor: pointer;
+}
+
+.banner-btn:hover {
+  background-color: #e6e6e6;
+}
+
+/* Smooth Text Animation */
+@keyframes slideInRight {
+  from {
+    opacity: 0;
+    transform: translateX(60px);
+  }
+  to {
+    opacity: 1;
+    transform: translateX(0);
+  }
+}
+/* Swiper container adjustments */
+
+.categories-swiper {
+  padding: 15px 25px; /* extra padding for arrows */
+  position: relative;
+}
+
+/* Category card styling */
+.category-item {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  height: 100px; /* smaller height */
+  min-width: 100px; /* slightly smaller */
+  border-radius: 16px;
+  cursor: pointer;
+  background: linear-gradient(135deg, #4f46e5, #8b5cf6); /* purple gradient */
+  color: #fff;
+  transition: transform 0.3s ease;
+}
+
+.category-item:hover {
+  transform: scale(1.05);
+}
+
+
+
+.category-name {
+  margin-top: 4px;
+  font-size: 0.75rem; /* smaller text */
+  text-align: center;
+}
+
+
+
+/* Hide default outline */
+/* Swiper arrows adjustments */
+.categories-swiper .swiper-button-next,
+.categories-swiper .swiper-button-prev {
+  color: #4f46e5;
+  top: 50%;
+  width: 32px;
+  height: 32px;
+  margin-top: -16px; /* vertically center */
+  z-index: 10; /* ensure above slides */
+  border-radius: 50%;
+}
+
+/* Push arrows outside the slides */
+.categories-swiper .swiper-button-next {
+  right: -8px; /* slightly outside */
+}
+
+.categories-swiper .swiper-button-prev {
+  left: -8px;
+}
+
+/* Optional: make arrows bigger for easier clicking */
+.categories-swiper .swiper-button-next:after,
+.categories-swiper .swiper-button-prev:after {
+  font-size: 24px;
+  font-weight: bold;
+}
+/* Section */
+.smartphone-brands-section {
+  background-color: #0e0e0e;
+  color: white;
+  padding: 3rem 1.5rem;
+}
+
+/* Title */
+.bank-offers-title {
+  font-size: 1.75rem;
+  font-weight: 600;
+  margin-bottom: 2rem;
+}
+
+/* Outer wrapper for arrows */
+.smartphone-brands-section {
+  color: white;
+  padding: 3rem 1.5rem;
+}
+
+.bank-offers-title {
+  font-size: 1.75rem;
+  font-weight: 600;
+  margin-bottom: 2rem;
+}
+
+/* Outer wrapper for arrows */
+.swiper-outer-wrapper {
+  position: relative;
+  overflow: visible;
+}
+
+/* Custom arrows */
+.custom-prev,
+.custom-next {
+  color: #fff;
+  width: 45px;
+  height: 45px;
+  border-radius: 50%;
+  top: 50%;
+  transform: translateY(-50%);
+  transition: all 0.3s ease;
+  z-index: 10;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.4);
+  position: absolute;
+  cursor: pointer;
+  background: rgba(0, 0, 0, 0.5);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+/* Move outside */
+.custom-prev {
+  left: -60px;
+}
+
+.custom-next {
+  right: -60px;
+}
+
+/* Hover */
+.custom-prev:hover,
+.custom-next:hover {
+  background: rgba(255, 255, 255, 0.8);
+  color: #000;
+}
+
+/* Brand card */
+.brand-card {
+  border-radius: 16px;
+  overflow: hidden;
+  cursor: pointer;
+}
+
+/* Brand image */
+.brand-image {
+  width: 100%;
+  height: 180px;
+  object-fit: cover;
+  transition: transform 0.4s ease;
+  border-radius: 16px;
+}
+
+.brand-card:hover .brand-image {
+  transform: scale(1.08);
+}
+
+/* Responsive */
+@media screen and (max-width: 768px) {
+  .custom-prev {
+    left: -40px;
+  }
+
+  .custom-next {
+    right: -40px;
+  }
+
+  .brand-image {
+    height: 150px;
+  }
+}
+
+@media screen and (max-width: 480px) {
+  .custom-prev {
+    left: -30px;
+  }
+
+  .custom-next {
+    right: -30px;
+  }
+
+  .brand-image {
+    height: 120px;
+  }
+}
+
+/* === Hero Swiper Fix === */
+.hero-slide-wrapper {
+  width: 100%;
+  height: 100%;
+  overflow: hidden;
+  position: relative;
+}
+
+.hero-slide-image {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  display: block;
+}
+
+/* Optional: make sure section doesn't overflow */
+section {
+  overflow-x: hidden;
+}
+
+/* Optional: handle swiper bullet overflow on small screens */
+.swiper-pagination {
+  bottom: 10px !important;
+}
