@@ -124,6 +124,36 @@ const Home = () => {
       subText: "*Exchange Benefits Up to ₹5,500",
       image: acImg,
     },
+    {
+      name: "K13x 5G",
+      subTitle: "oppo",
+      oldPrice: "16,999",
+      price: "₹10,499*",
+      subText: "*Inclusive of all Offers",
+      image: phoneImg,
+    },
+    {
+      name: '32" Smart TV',
+      subTitle: "Samsung",
+      oldPrice: "22,900",
+      price: "₹9,390*",
+      subText: "*Inclusive of Bank Offers",
+      image: tvImg,
+    },
+    {
+      name: "PlayStation 5",
+      subTitle: "Sony",
+      price: "Starting at ₹41,290*",
+      subText: "*Inclusive of all Offers",
+      image: ps5Img,
+    },
+    {
+      name: "Bestselling Powerbanks",
+      subTitle: "Oppo",
+      price: "Starting at ₹21,990*",
+      subText: "*Exchange Benefits Up to ₹5,500",
+      image: acImg,
+    },
   ];
 
   // Croma Exclusive Hidden Deals Data
@@ -177,12 +207,12 @@ const Home = () => {
       title: "iOS 26 now available",
       subtitle: "Liquid Glass finally comes to your iPhone",
     },
-     {
+    {
       image: watchesBanner,
       title: "iOS 26 now available",
       subtitle: "Liquid Glass finally comes to your iPhone",
     },
- 
+
     {
       image: samsungBanner,
       title: "Samsung Galaxy S25 FE",
@@ -199,13 +229,11 @@ const Home = () => {
     <div>
       <PromoBanner />
       <div className="container">
-       
-
-         {/* ✅ Categories Swiper */}
+        {/* ✅ Categories Swiper */}
         <div className="my-6">
           <Categories />
         </div>
-
+        {/* 
         <div className="latest-launches-section p-6">
           <h1 className="bank-offers-title ">Latest Launches</h1>
 
@@ -214,16 +242,13 @@ const Home = () => {
               <ProductCard key={index} product={product} />
             ))}
           </div>
-        </div>
-
+        </div> */}
       </div>
-      <WhatsHot
-        items={hotItems}
-        dealsItems={cromaDealsData}
+      <WhatsHot items={hotItems} />
+      {/* dealsItems={cromaDealsData}
         promoItems={promoItems}
-        banners={bannerData} // ✅ correct: plural
-      />
-         <BankOffers offers={offersData} />
+        banners={bannerData} // ✅ correct: plural */}
+      {/* <BankOffers offers={offersData} /> */}
     </div>
   );
 };
