@@ -7,16 +7,22 @@ import "swiper/css";
 import "swiper/css/effect-fade";
 import "swiper/css/pagination";
 import "swiper/css/navigation";
+import { useNavigate } from "react-router-dom";
 
-const WhatsHot = ({ items }) => {
+const WhatsHot = ({ items, path }) => {
+    const navigate = useNavigate();
+
   return (
     <div className="container mb-6">
+
       {/* Section 2: What's Hot */}
       <section className="section">
         <h1 className="bank-offers-title mt-12">What's Hot</h1>
         <div className="whatshot-cards-container">
           {items.map((item, index) => (
-            <div key={index} className="whatshot-card">
+            <div key={index} className="whatshot-card"
+                 onClick={() => navigate(path)}>
+              
               <h3 className="whatshot-name">{item.name}</h3>
               {item.subTitle && (
                 <p className="whatshot-subtitle">{item.subTitle}</p>
@@ -39,6 +45,7 @@ const WhatsHot = ({ items }) => {
           ))}
         </div>
       </section>
+
     </div>
   );
 };

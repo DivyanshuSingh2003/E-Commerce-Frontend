@@ -275,7 +275,7 @@ font-size: 1.6rem;
 /* Cards Container */
 .whatshot-cards-container {
   display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(200px, 1fr)); /* reduced min-width from 230px to 200px */
+  grid-template-columns: repeat(4, minmax(200px, 1fr)); /* reduced min-width from 230px to 200px */
   gap: 1rem;
 }
 

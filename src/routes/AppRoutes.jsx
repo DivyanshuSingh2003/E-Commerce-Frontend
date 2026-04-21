@@ -4,7 +4,7 @@ import Home from "../Layout/Home";
 // Category pages
 import Laptops from "../Component/pages/Laptops";
 import Headphones from "../Component/pages/Headphones";
-import MobilesPage from "../Component/pages/MobilesPage";
+import ProdDetails from "../Component/pages/ProdDetails";
 import TelevisionsPage from "../Component/pages/TelevisionsPage";
 import AirConditionersPage from "../Component/pages/AirConditionersPage";
 import Watches from "../Component/pages/Watches";
@@ -21,7 +21,7 @@ const AppRoutes = () => {
       <Route path="/" element={<Home />} />
 
       {/* Categories */}
-      <Route path="/mobiles" element={<MobilesPage />} />
+      <Route path="/prodDetails" element={<ProdDetails />} />
       <Route path="/televisions" element={<TelevisionsPage />} />
       <Route path="/laptops" element={<Laptops />} />
       <Route path="/air-conditioners" element={<AirConditionersPage />} />

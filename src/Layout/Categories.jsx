@@ -18,16 +18,16 @@ import {
 } from "react-icons/md";
 
 const categoriesArray = [
-  { name: "Mobiles", icon: <MdSmartphone size={36} className="text-blue-500" />, path: "/mobiles" },
-  { name: "Televisions", icon: <MdTv size={36} className="text-purple-500" />, path: "/televisions" },
-  // { name: "Air Conditioners", icon: <MdAcUnit size={36} className="text-cyan-500" />, path: "/air-conditioners" },
-  { name: "Laptops", icon: <MdLaptop size={36} className="text-orange-500" />, path: "/laptops" },
-  { name: "Headphones", icon: <MdHeadphones size={36} className="text-pink-500" />, path: "/headphones" },
-  { name: "Accessories", icon: <MdWatch size={36} className="text-green-500" />, path: "/accessories" },
-  { name: "Powerbanks", icon: <MdBatteryFull size={36} className="text-yellow-500" />, path: "/powerbanks" },
-  { name: "Speakers", icon: <MdSpeaker size={36} className="text-indigo-500" />, path: "/speakers" },
-  { name: "Cameras", icon: <MdCameraAlt size={36} className="text-red-500" />, path: "/cameras" },
-  { name: "Geysers", icon: <MdHotTub size={36} className="text-teal-500" />, path: "/geysers" },
+  { name: "Mobiles", icon: <MdSmartphone size={36} className="text-blue-500" />, path: "/prodDetails" },
+  // { name: "Televisions", icon: <MdTv size={36} className="text-purple-500" />, path: "/televisions" },
+  // // { name: "Air Conditioners", icon: <MdAcUnit size={36} className="text-cyan-500" />, path: "/air-conditioners" },
+  // { name: "Laptops", icon: <MdLaptop size={36} className="text-orange-500" />, path: "/laptops" },
+  // { name: "Headphones", icon: <MdHeadphones size={36} className="text-pink-500" />, path: "/headphones" },
+  // { name: "Accessories", icon: <MdWatch size={36} className="text-green-500" />, path: "/accessories" },
+  // { name: "Powerbanks", icon: <MdBatteryFull size={36} className="text-yellow-500" />, path: "/powerbanks" },
+  // { name: "Speakers", icon: <MdSpeaker size={36} className="text-indigo-500" />, path: "/speakers" },
+  // { name: "Cameras", icon: <MdCameraAlt size={36} className="text-red-500" />, path: "/cameras" },
+  // { name: "Geysers", icon: <MdHotTub size={36} className="text-teal-500" />, path: "/geysers" },
 ];
 
 const Categories = () => {

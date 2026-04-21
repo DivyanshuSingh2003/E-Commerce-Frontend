@@ -84,7 +84,7 @@ const MobilesPagePro = () => {
 
   // ✅ Bestsellers
   const bestsellers = [
-    { id: 1, name: "iPhone 16 Pro", img: phoneAImg, price: "₹1,39,900", rating: 4.9 },
+    { id: 1, name: "iPhone 16 Pro", img: phoneAImg, price: "₹1,39,100", rating: 4.9 },
     { id: 2, name: "Samsung Galaxy S24 Ultra", img: phoneBImg, price: "₹1,29,999", rating: 4.8 },
     { id: 3, name: "OnePlus 12R", img: phoneCImg, price: "₹45,999", rating: 4.6 },
     { id: 4, name: "Google Pixel 8", img: phoneDImg, price: "₹82,999", rating: 4.7 },
